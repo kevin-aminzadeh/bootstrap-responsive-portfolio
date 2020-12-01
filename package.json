@@ -1,0 +1,23 @@
+{
+  "name": "kevin-aminzadeh",
+  "version": "1.0.0",
+  "description": "Static Portfolio Site for Github Pages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w scss/ -o dist/assets/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevin-aminzadeh/kevin-aminzadeh.git"
+  },
+  "author": "Kevin Aminzadeh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevin-aminzadeh/kevin-aminzadeh/issues"
+  },
+  "homepage": "https://github.com/kevin-aminzadeh/kevin-aminzadeh#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
