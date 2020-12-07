@@ -1,70 +1,232 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <title>Kevin Aminzadeh | Portfolio</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" /> -->
+    <script
+      src="https://kit.fontawesome.com/8426ae9c5d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Kevin Aminzadeh | Software Engineer</title>
   </head>
-  <body>
-    <!-- Page Header -->
+  <body class="d-flex flex-column h-100">
+    <!-- Navbar Component -->
     <header>
-      <!-- Logo -->
-      <a href="index.html">
-        <svg
-          id="logo"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 166.98 246.9"
-          style="width: 42px; fill: black"
-        >
-          <title>logo</title>
-          <path
-            d="M657.17,197.84V253c8.65-6.32,16.49-12,24.31-17.74,15.9-11.67,31.87-23.26,47.62-35.13,2.76-2.09,4.42-1.67,6.82.11,12.37,9.19,24.88,18.19,37.18,27.47a7.6,7.6,0,0,1,2.59,5.28q.25,29.68-.06,59.38a8.08,8.08,0,0,1-3,5.49c-10.12,7.74-20.46,15.2-31.44,23.28,7.83,5.78,15,11.95,23,16.76,8.38,5.05,12.53,10.76,11.81,21.3-1.11,16.23-.37,32.59-.18,48.89,0,3.56-1.13,5.62-4,7.69-13.2,9.44-26.18,19.19-39.39,28.93-26.66-19.57-53.09-39-79.69-58.51L609.47,418V343.19l118,86.68c.18-1.7.41-2.9.41-4.09,0-13.64-.09-27.29.13-40.92.06-3.58-1.18-5.68-4-7.76q-55.83-40.83-111.54-81.82c-2.24-1.64-3.28-3.17-3.26-6,.13-17.3,0-34.6.13-51.9,0-1.89.77-4.51,2.13-5.54C626.21,220.61,641.19,209.65,657.17,197.84ZM763.91,348.76l-79.32-58.25,79.29-58.46c-9.84-7.21-19.13-13.88-28.24-20.78-2.38-1.8-3.81-1.89-6.35,0C710,225.6,690.56,239.68,671.2,253.88c-16.54,12.13-33,24.34-49.94,36.8l111,81.54ZM699.67,290.5c10.72,7.91,20.9,15.31,30.93,22.9,2.42,1.83,4.13,1.59,6.42-.15,6.58-5,13-10.49,20.09-14.57,8.13-4.65,10.5-10.76,9.88-19.84-.82-12.16-.2-24.42-.2-37.64Zm67.07,67.38c-10.13,7.5-19.53,14.4-28.83,21.44a4.24,4.24,0,0,0-1.06,3.05c-.07,15.59-.05,31.18-.05,48,10.09-7.46,19.25-14.2,28.34-21a4.13,4.13,0,0,0,1.54-2.79M618.18,281.78c9.52-7,18.26-13.24,26.72-19.82a8.8,8.8,0,0,0,3.08-5.91c.27-12.13.13-24.26.09-36.4a28.24,28.24,0,0,0-.51-3.49C638,223.2,629,229.84,620,236.65a5.2,5.2,0,0,0-1.74,3.65C618.13,253.74,618.18,267.18,618.18,281.78Zm.39,79.35v38.94l26.49-19.47Z"
-            transform="translate(-609.16 -197.84)"
-          />
-        </svg>
-      </a>
-      <!-- Navbar -->
-      <nav>
-        <ul>
-          <li>01. Portfolio</li>
-          <li>02. About</li>
-          <li>03. Contact</li>
-        </ul>
-      </nav>
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a href="index.html" class="navbar-brand">
+            <svg
+              id="logo"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 166.98 246.9"
+              style="width: 42px; fill: black"
+              role="img"
+              aria-labelledby="logoTitle"
+            >
+              <title id="#logoTitle">logo</title>
+              <path
+                d="M657.17,197.84V253c8.65-6.32,16.49-12,24.31-17.74,15.9-11.67,31.87-23.26,47.62-35.13,2.76-2.09,4.42-1.67,6.82.11,12.37,9.19,24.88,18.19,37.18,27.47a7.6,7.6,0,0,1,2.59,5.28q.25,29.68-.06,59.38a8.08,8.08,0,0,1-3,5.49c-10.12,7.74-20.46,15.2-31.44,23.28,7.83,5.78,15,11.95,23,16.76,8.38,5.05,12.53,10.76,11.81,21.3-1.11,16.23-.37,32.59-.18,48.89,0,3.56-1.13,5.62-4,7.69-13.2,9.44-26.18,19.19-39.39,28.93-26.66-19.57-53.09-39-79.69-58.51L609.47,418V343.19l118,86.68c.18-1.7.41-2.9.41-4.09,0-13.64-.09-27.29.13-40.92.06-3.58-1.18-5.68-4-7.76q-55.83-40.83-111.54-81.82c-2.24-1.64-3.28-3.17-3.26-6,.13-17.3,0-34.6.13-51.9,0-1.89.77-4.51,2.13-5.54C626.21,220.61,641.19,209.65,657.17,197.84ZM763.91,348.76l-79.32-58.25,79.29-58.46c-9.84-7.21-19.13-13.88-28.24-20.78-2.38-1.8-3.81-1.89-6.35,0C710,225.6,690.56,239.68,671.2,253.88c-16.54,12.13-33,24.34-49.94,36.8l111,81.54ZM699.67,290.5c10.72,7.91,20.9,15.31,30.93,22.9,2.42,1.83,4.13,1.59,6.42-.15,6.58-5,13-10.49,20.09-14.57,8.13-4.65,10.5-10.76,9.88-19.84-.82-12.16-.2-24.42-.2-37.64Zm67.07,67.38c-10.13,7.5-19.53,14.4-28.83,21.44a4.24,4.24,0,0,0-1.06,3.05c-.07,15.59-.05,31.18-.05,48,10.09-7.46,19.25-14.2,28.34-21a4.13,4.13,0,0,0,1.54-2.79M618.18,281.78c9.52-7,18.26-13.24,26.72-19.82a8.8,8.8,0,0,0,3.08-5.91c.27-12.13.13-24.26.09-36.4a28.24,28.24,0,0,0-.51-3.49C638,223.2,629,229.84,620,236.65a5.2,5.2,0,0,0-1.74,3.65C618.13,253.74,618.18,267.18,618.18,281.78Zm.39,79.35v38.94l26.49-19.47Z"
+                transform="translate(-609.16 -197.84)"
+              />
+            </svg>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarContent"
+            aria-controls="navbarContent"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a href="portfolio.html" class="nav-link">01. Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link">02. About</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">03. Contact</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="btn btn-primary">Download CV</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <!-- Main Content -->
-    <main>
+    <main class="my-auto">
       <div class="container">
-        <h1>Portfolio</h1>
-
-        <!-- Project Gallery -->
-        <section>
-          <h2>Some Things I've Built</h2>
-          <!-- Project Catageory Nav -->
-          <nav>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-          </nav>
-          <!-- Project List -->
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+        <section id="portfolio">
+          <h1 class="h2 text-primary text-uppercase font-weight-light">
+            Portfolio
+          </h1>
+          <h2 class="text-uppercase font-weight-bold">
+            Some Things <br />I've Built.
+          </h2>
+          <div class="row my-5">
+            <div class="col-3 mx-auto">
+              <nav class="nav nav-pills nav-fill">
+                <a class="nav-item nav-link active" href="">All</a>
+                <a class="nav-item nav-link" href="">Angular</a>
+                <a class="nav-item nav-link" href="">React</a>
+              </nav>
+            </div>
+          </div>
+          <div class="project-gallery mb-5">
+            <div class="row">
+              <div class="col-4">
+                <div class="card bg-dark text-white">
+                  <img
+                    class="card-img"
+                    src="./assets/img/projects/item1.png"
+                    alt="Card image"
+                  />
+                  <div class="card-img-overlay">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                    <p class="card-text">Last updated 3 mins ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card bg-dark text-white">
+                  <img
+                    class="card-img"
+                    src="./assets/img/projects/item2.png"
+                    alt="Card image"
+                  />
+                  <div class="card-img-overlay">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                    <p class="card-text">Last updated 3 mins ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card bg-dark text-white">
+                  <img
+                    class="card-img"
+                    src="./assets/img/projects/item3.png"
+                    alt="Card image"
+                  />
+                  <div class="card-img-overlay">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                    <p class="card-text">Last updated 3 mins ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-5">
+              <div class="col-4">
+                <div class="card bg-dark text-white">
+                  <img
+                    class="card-img"
+                    src="./assets/img/projects/item4.png"
+                    alt="Card image"
+                  />
+                  <div class="card-img-overlay">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                    <p class="card-text">Last updated 3 mins ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card bg-dark text-white">
+                  <img
+                    class="card-img"
+                    src="./assets/img/projects/item5.png"
+                    alt="Card image"
+                  />
+                  <div class="card-img-overlay">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                    <p class="card-text">Last updated 3 mins ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card bg-dark text-white">
+                  <img
+                    class="card-img"
+                    src="./assets/img/projects/item6.png"
+                    alt="Card image"
+                  />
+                  <div class="card-img-overlay">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                    <p class="card-text">Last updated 3 mins ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </main>
 
-    <!-- Footer -->
-    <footer></footer>
+    <!-- Footer Component -->
+    <footer class="footer mt-auto">
+      <div class="d-flex flex-column py-3 px-3 bg-primary" id="social">
+        <i class="fab fa-linkedin-in"></i>
+        <i class="fab fa-github"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </footer>
+
+    <!-- JS Imports -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
