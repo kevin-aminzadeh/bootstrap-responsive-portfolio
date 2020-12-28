@@ -1,85 +1,32 @@
-// Imports
-@import url("https://fonts.googleapis.com/css?family=Poppins|Roboto&display=swap");
-@import "config";
-@import "utilities";
-@import "portfolio";
-@import "general";
-@import "contact";
+//** || Overrides //
+$primary: #fc5353;
 
-// Home Header
-#home-header {
-  height: 100vh;
+//** || Custom Styles //
+#logo:hover {
+  fill: #fc5353;
 }
 
-// Logo
-#logo {
-  width: 70px;
-  height: 70px;
+#logo:active {
+  fill: #fc5353;
 }
 
-// Navbar
-#navbar {
-  justify-self: baseline;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 2rem;
+//** || Bootstrap Imports //
+// Required
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
 
-  #logo {
-    a {
-      font-size: 6rem;
-      font-weight: bold;
-      color: $text-light;
-    }
-  }
-
-  ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    li {
-      margin-right: 6rem;
-
-      a {
-        color: $text-light;
-      }
-    }
-  }
-}
-
-// Hero Section
-#hero {
-  text-align: center;
-  padding-top: 20%;
-
-  &-inner {
-    display: inline-block;
-    text-align: left;
-  }
-
-  .lead {
-    text-align: center;
-  }
-
-  #hero-cta {
-    text-align: center;
-  }
-}
-
-// Footer
-.social-tab {
-  position: fixed;
-  bottom: 0;
-  background-color: $color-primary;
-  padding: 1rem;
-
-  i {
-    display: block;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-
-    &:nth-last-child() {
-      color: $accent-dark;
-    }
-  }
-}
+// Optional
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/forms";
+@import "../node_modules/bootstrap/scss/nav";
+@import "../node_modules/bootstrap/scss/navbar";
+@import "../node_modules/bootstrap/scss/transitions";
+@import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/card";
+@import "../node_modules/bootstrap/scss/bootstrap-utilities.scss";
