@@ -1,6 +1,6 @@
 # Responsive Portfolio - Bootstrap & CSS Assignment
 
-![Responsive Porfolio Screenshot](dist/assets/images/screenshot.png)
+![Responsive Porfolio Screenshot](dist/assets/imag/screenshot.png)
 
 > <h2 align="center"><a  href="https://kevin-aminzadeh.github.io/01-bootcamp-code-refactor/">Live Demo</a></h2>
 
