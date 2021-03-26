@@ -2,7 +2,7 @@
 
 ![Responsive Porfolio Screenshot](dist/assets/img/screenshot.png)
 
-> <h2 align="center"><a  href="https://kevin-aminzadeh.github.io/02-bootstrap-responsive-portfolio/">Live Demo</a></h2>
+> <h2 align="center"><a  href="https://kevin-aminzadeh.github.io/bootstrap-responsive-portfolio/">Live Demo</a></h2>
 
 ## Table of Contents
 
